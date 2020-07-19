@@ -12,14 +12,14 @@ function binarySearch(arr, n, value) {
   while (left <= right) {
     let middle = left + ((right - left) >> 1);
 
-    if (array[middle] >= value) {
+    if (arr[middle] >= value) {
       right = middle - 1
     } else {
       left = middle + 1
     }
   }
 
-  return array[right + 1] >= value ? right + 1 : -1
+  return arr[right + 1] >= value ? right + 1 : -1
 }
 
 
